@@ -7,25 +7,18 @@
 
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
   <!-- Ionicons -->
   <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
-  <!-- Tempusdominus Bootstrap 4 -->
-  <link rel="stylesheet" href="plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
-  <!-- iCheck -->
-  <link rel="stylesheet" href="plugins/icheck-bootstrap/icheck-bootstrap.min.css">
-  <!-- JQVMap -->
-  <link rel="stylesheet" href="plugins/jqvmap/jqvmap.min.css">
-  <!-- Theme style -->
-  <link rel="stylesheet" href="dist/css/adminlte.min.css">
-  @vite(['resources/css/app.css', 'resources/js/app.js'])
-  <!-- overlayScrollbars -->
-  <link rel="stylesheet" href="plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
-  <!-- Daterange picker -->
-  <link rel="stylesheet" href="plugins/daterangepicker/daterangepicker.css">
-  <!-- summernote -->
-  <link rel="stylesheet" href="plugins/summernote/summernote-bs4.min.css">
+
+@vite([
+  "resources/css/adminlte.min.css",
+  "resources/plugins/fontawesome-free/css/all.min.css",
+  "resources/plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css",
+  "resources/plugins/icheck-bootstrap/icheck-bootstrap.min.css",
+  "resources/plugins/overlayScrollbars/css/OverlayScrollbars.min.css",
+  "resources/plugins/jqvmap/jqvmap.min.css",
+  "resources/plugins/daterangepicker/daterangepicker.css",
+  "resources/plugins/summernote/summernote-bs4.min.css"])
 </head>
 <body class="hold-transition sidebar-mini layout-fixed">
 <div class="wrapper">
@@ -38,39 +31,23 @@
     </div>
     @include('layout.footer')
 </div>
-<!-- jQuery -->
-<script src="plugins/jquery/jquery.min.js"></script>
-<!-- jQuery UI 1.11.4 -->
-<script src="plugins/jquery-ui/jquery-ui.min.js"></script>
-<!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
-<script>
-  $.widget.bridge('uibutton', $.ui.button)
-</script>
-<!-- Bootstrap 4 -->
-<script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
-<!-- ChartJS -->
-<script src="plugins/chart.js/Chart.min.js"></script>
-<!-- Sparkline -->
-<script src="plugins/sparklines/sparkline.js"></script>
-<!-- JQVMap -->
-<script src="plugins/jqvmap/jquery.vmap.min.js"></script>
-<script src="plugins/jqvmap/maps/jquery.vmap.usa.js"></script>
-<!-- jQuery Knob Chart -->
-<script src="plugins/jquery-knob/jquery.knob.min.js"></script>
-<!-- daterangepicker -->
-<script src="plugins/moment/moment.min.js"></script>
-<script src="plugins/daterangepicker/daterangepicker.js"></script>
-<!-- Tempusdominus Bootstrap 4 -->
-<script src="plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
-<!-- Summernote -->
-<script src="plugins/summernote/summernote-bs4.min.js"></script>
-<!-- overlayScrollbars -->
-<script src="plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
-<!-- AdminLTE App -->
-<script src="dist/js/adminlte.js"></script>
-<!-- AdminLTE for demo purposes -->
-<script src="dist/js/demo.js"></script>
-<!-- AdminLTE dashboard demo (This is only for demo purposes) -->
-<script src="dist/js/pages/dashboard.js"></script>
+
+
+@vite([
+  "resources/js/adminlte.js",
+  "resources/js/pages/dashboard.js",
+  "resources/plugins/jquery/jquery.min.js",
+  "resources/plugins/bootstrap/js/bootstrap.bundle.min.js",
+  "resources/plugins/chart.js/Chart.min.js",
+  "resources/plugins/sparklines/sparkline.js",
+  "resources/plugins/jqvmap/jquery.vmap.min.js",
+  "resources/plugins/jqvmap/maps/jquery.vmap.usa.js",
+  "resources/plugins/jquery-knob/jquery.knob.min.js",
+  "resources/plugins/moment/moment.min.js",
+  "resources/plugins/daterangepicker/daterangepicker.js",
+  "resources/plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js",
+  "resources/plugins/summernote/summernote-bs4.min.js",
+  "resources/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js",
+  "resources/js/demo.js"])
 </body>
 </html>
