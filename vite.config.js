@@ -5,6 +5,7 @@ export default defineConfig({
     plugins: [
         laravel({
             input: [
+                "resources/css/app.css",
                 "resources/css/adminlte.min.css",
                 "resources/plugins/fontawesome-free/css/all.min.css",
                 "resources/plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css",
@@ -13,9 +14,6 @@ export default defineConfig({
                 "resources/plugins/jqvmap/jqvmap.min.css",
                 "resources/plugins/daterangepicker/daterangepicker.css",
                 "resources/plugins/summernote/summernote-bs4.min.css",
-
-                "resources/js/adminlte.js",
-                "resources/js/pages/dashboard.js",
                 "resources/plugins/jquery/jquery.min.js",
                 "resources/plugins/jquery-ui/jquery-ui.min.js",
                 "resources/plugins/bootstrap/js/bootstrap.bundle.min.js",
@@ -30,6 +28,9 @@ export default defineConfig({
                 "resources/plugins/summernote/summernote-bs4.min.js",
                 "resources/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js",
                 "resources/js/demo.js",
+                "resources/js/adminlte.js",
+                "resources/js/pages/dashboard.js",
+                "resources/js/app.js",
             ],
             refresh: true,
         }),
