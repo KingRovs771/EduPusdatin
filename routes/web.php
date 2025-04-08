@@ -8,5 +8,8 @@ Route::get('/', function () {
 });
 
 Route::get('/dashboard', [AdmininistratorController::class, 'index'])->name('dashboard');
+Route::get('/profile', [AdmininistratorController::class, 'index'])->name('profile');
+Route::get('/sarpras', [AdmininistratorController::class, 'index'])->name('sarpras');
 
-
+Route::get('/guru', [AdmininistratorController::class, 'index'])->name('gtk.guru');
+Route::get('/tendik', [AdmininistratorController::class, 'index'])->name('gtk.tendik');

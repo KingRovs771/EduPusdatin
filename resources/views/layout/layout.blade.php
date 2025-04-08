@@ -40,5 +40,14 @@
 @vite([
   "resources/js"
 ])
+
+<script>
+  $(document).ready(function () {
+    $('.nav-link').on('click', function () {
+        $('.nav-link').removeClass('active'); // Hapus active dari semua
+        $(this).addClass('active'); // Tambahkan active ke yang diklik
+    });
+});
+</script>
 </body>
 </html>

@@ -35,48 +35,47 @@
       <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
         <!-- Add icons to the links using the .nav-icon class
              with font-awesome or any other icon font library -->
-        <li class="nav-item menu-open">
-          <a href="#" class="nav-link active">
+        <li class="nav-item {{ request()->is('dashboard') ? 'menu-open' : '' }}">
+          <a href="{{route('dashboard')}}" class="nav-link {{ request()->is('dashboard') ? 'active' : '' }}">
             <i class="nav-icon fas fa-home"></i>
             <p>
               Dashboard
             </p>
           </a>
         </li>
-        <li class="nav-item">
-          <a href="pages/widgets.html" class="nav-link">
+        <li class="nav-item  {{ request()->is('profile') ? 'menu-open' : '' }}">
+          <a href="{{ route('profile')}}" class="nav-link {{ request()->is('profile') ? 'active' : '' }}">
             <i class="nav-icon fas fa-school"></i>
             <p>
               Data Sekolah
             </p>
           </a>
         </li>
-        <li class="nav-item">
-          <a href="pages/widgets.html" class="nav-link">
+        <li class="nav-item {{ request()->is('sarpras') ? 'menu-open' : '' }}">
+          <a href="{{ route('sarpras')}}" class="nav-link {{ request()->is('sarpras') ? 'active' : '' }}">
             <i class="nav-icon fas fa-building"></i>
             <p>
               Data Sarpras
             </p>
           </a>
         </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link">
+        <li class="nav-item  {{ request()->is('gtk.guru') ? 'menu-open' : '' }}">
+          <a href="#" class="nav-link  {{ request()->is('gtk.guru') ? 'active' : '' }}">
             <i class="nav-icon fas fa-graduation-cap"></i>
             <p>
               Data GTK
               <i class="fas fa-angle-left right"></i>
-              <span class="badge badge-info right">6</span>
             </p>
           </a>
           <ul class="nav nav-treeview">
-            <li class="nav-item">
-              <a href="pages/layout/top-nav.html" class="nav-link">
+            <li class="nav-item {{ request()->is('gtk.guru') ? 'menu-open' : '' }}">
+              <a href="{{route('gtk.guru')}}" class="nav-link {{ request()->is('gtk.guru') ? 'active' : '' }}">
                 <i class="far fa-circle nav-icon"></i>
                 <p>Guru</p>
               </a>
             </li>
-            <li class="nav-item">
-              <a href="pages/layout/top-nav-sidebar.html" class="nav-link">
+            <li class="nav-item {{ request()->is('gtk.tendik') ? 'menu-open' : '' }}">
+              <a href="{{ route('gtk.tendik')}}" class="nav-link {{ request()->is('gtk.tendik') ? 'active' : '' }}">
                 <i class="far fa-circle nav-icon"></i>
                 <p>Tendik</p>
               </a>
@@ -93,27 +92,21 @@
           </a>
           <ul class="nav nav-treeview">
             <li class="nav-item">
-              <a href="pages/charts/chartjs.html" class="nav-link">
+              <a href="{{route('dashboard')}}" class="nav-link">
                 <i class="far fa-circle nav-icon"></i>
-                <p>ChartJS</p>
+                <p>Peserta Didik</p>
               </a>
             </li>
             <li class="nav-item">
               <a href="pages/charts/flot.html" class="nav-link">
                 <i class="far fa-circle nav-icon"></i>
-                <p>Flot</p>
+                <p>Alumni</p>
               </a>
             </li>
             <li class="nav-item">
               <a href="pages/charts/inline.html" class="nav-link">
                 <i class="far fa-circle nav-icon"></i>
-                <p>Inline</p>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="pages/charts/uplot.html" class="nav-link">
-                <i class="far fa-circle nav-icon"></i>
-                <p>uPlot</p>
+                <p>Keluar</p>
               </a>
             </li>
           </ul>
@@ -130,25 +123,13 @@
             <li class="nav-item">
               <a href="pages/charts/chartjs.html" class="nav-link">
                 <i class="far fa-circle nav-icon"></i>
-                <p>ChartJS</p>
+                <p>Kelas</p>
               </a>
             </li>
             <li class="nav-item">
               <a href="pages/charts/flot.html" class="nav-link">
                 <i class="far fa-circle nav-icon"></i>
-                <p>Flot</p>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="pages/charts/inline.html" class="nav-link">
-                <i class="far fa-circle nav-icon"></i>
-                <p>Inline</p>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="pages/charts/uplot.html" class="nav-link">
-                <i class="far fa-circle nav-icon"></i>
-                <p>uPlot</p>
+                <p>Eksktrakulikuler</p>
               </a>
             </li>
           </ul>
