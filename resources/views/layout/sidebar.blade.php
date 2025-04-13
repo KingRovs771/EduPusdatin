@@ -43,13 +43,34 @@
             </p>
           </a>
         </li>
-        <li class="nav-item  {{ request()->is('profile') ? 'menu-open' : '' }}">
-          <a href="{{ route('profile')}}" class="nav-link {{ request()->is('profile') ? 'active' : '' }}">
+        <li class="nav-item  {{ request()->routeIs('schooldata.*') ? 'menu-open' : '' }}">
+          <a href="#" class="nav-link {{ request()->routeIs('schooldata.*') ? 'active' : '' }}">
             <i class="nav-icon fas fa-school"></i>
             <p>
               Data Sekolah
+              <i class="fas fa-angle-left right"></i>
             </p>
           </a>
+          <ul class="nav nav-treeview">
+            <li class="nav-item {{ request()->routeIs('schooldata.profile_sekolah') ? 'menu-open' : '' }}">
+              <a href="{{route('schooldata.profile_sekolah')}}" class="nav-link {{ request()->routeIs('schooldata.profile_sekolah') ? 'active' : '' }}">
+                <i class="far fa-circle nav-icon"></i>
+                <p>Profile Sekolah</p>
+              </a>
+            </li>
+            <li class="nav-item {{ request()->routeIs('schooldata.tahun_akademik') ? 'menu-open' : '' }}">
+              <a href="{{route('schooldata.tahun_akademik')}}" class="nav-link {{ request()->routeIs('schooldata.tahun_akademik') ? 'active' : '' }}">
+                <i class="far fa-circle nav-icon"></i>
+                <p>Tahun Akademik</p>
+              </a>
+            </li>
+            <li class="nav-item {{ request()->routeIs('schooldata.mapel') ? 'menu-open' : '' }}">
+              <a href="{{ route('schooldata.mapel')}}" class="nav-link {{ request()->routeIs('schooldata.mapel') ? 'active' : '' }}">
+                <i class="far fa-circle nav-icon"></i>
+                <p>Mata Pelajaran</p>
+              </a>
+            </li>
+          </ul>
         </li>
         <li class="nav-item {{ request()->is('sarpras') ? 'menu-open' : '' }}">
           <a href="{{ route('sarpras')}}" class="nav-link {{ request()->is('sarpras') ? 'active' : '' }}">
@@ -59,8 +80,8 @@
             </p>
           </a>
         </li>
-        <li class="nav-item  {{ request()->is('gtk.guru') ? 'menu-open' : '' }}">
-          <a href="#" class="nav-link  {{ request()->is('gtk.guru') ? 'active' : '' }}">
+        <li class="nav-item {{ request()->routeIs('gtk.*') ? 'menu-open' : '' }}">
+          <a href="#" class="nav-link {{ request()->routeIs('gtk.*') ? 'active' : '' }}">
             <i class="nav-icon fas fa-graduation-cap"></i>
             <p>
               Data GTK
@@ -68,22 +89,22 @@
             </p>
           </a>
           <ul class="nav nav-treeview">
-            <li class="nav-item {{ request()->is('gtk.guru') ? 'menu-open' : '' }}">
-              <a href="{{route('gtk.guru')}}" class="nav-link {{ request()->is('gtk.guru') ? 'active' : '' }}">
+            <li class="nav-item {{ request()->routeIs('gtk.guru') ? 'menu-open' : '' }}">
+              <a href="{{route('gtk.guru')}}" class="nav-link {{ request()->routeIs('gtk.guru') ? 'active' : '' }}">
                 <i class="far fa-circle nav-icon"></i>
                 <p>Guru</p>
               </a>
             </li>
-            <li class="nav-item {{ request()->is('gtk.tendik') ? 'menu-open' : '' }}">
-              <a href="{{ route('gtk.tendik')}}" class="nav-link {{ request()->is('gtk.tendik') ? 'active' : '' }}">
+            <li class="nav-item {{ request()->routeIs('gtk.tendik') ? 'menu-open' : '' }}">
+              <a href="{{ route('gtk.tendik')}}" class="nav-link {{ request()->routeIs('gtk.tendik') ? 'active' : '' }}">
                 <i class="far fa-circle nav-icon"></i>
                 <p>Tendik</p>
               </a>
             </li>
           </ul>
         </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link">
+        <li class="nav-item {{ request()->routeIs('pesertadidik.*') ? 'menu-open' : ''}}">
+          <a href="#" class="nav-link {{ request()->routeIs('pesertadidik.*') ? 'active' : ''}}">
             <i class="nav-icon fas fa-user-graduate"></i>
             <p>
               Peserta Didik
@@ -91,28 +112,28 @@
             </p>
           </a>
           <ul class="nav nav-treeview">
-            <li class="nav-item">
-              <a href="{{route('dashboard')}}" class="nav-link">
+            <li class="nav-item {{request()->routeIs('pesertadidik.siswa') ? 'menu-open' : ''}}">
+              <a href="{{route('pesertadidik.siswa')}}" class="nav-link {{request()->routeIs('pesertadidik.siswa') ? 'active' : ''}}">
                 <i class="far fa-circle nav-icon"></i>
                 <p>Peserta Didik</p>
               </a>
             </li>
-            <li class="nav-item">
-              <a href="pages/charts/flot.html" class="nav-link">
+            <li class="nav-item {{request()->routeIs('pesertadidik.alumni') ? 'menu' : ''}}">
+              <a href="{{route('pesertadidik.alumni')}}" class="nav-link {{request()->routeIs('pesertadidik.alumni') ? 'active' : ''}}">
                 <i class="far fa-circle nav-icon"></i>
                 <p>Alumni</p>
               </a>
             </li>
-            <li class="nav-item">
-              <a href="pages/charts/inline.html" class="nav-link">
+            <li class="nav-item {{request()->routeIs('pesertadidik.outStudents') ? 'menu-open' : ''}}">
+              <a href="{{route('pesertadidik.outStudents')}}" class="nav-link {{request()->routeIs('pesertadidik.outStudents') ? 'active' : ''}}">
                 <i class="far fa-circle nav-icon"></i>
                 <p>Keluar</p>
               </a>
             </li>
           </ul>
         </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link">
+        <li class="nav-item {{request()->routeIs('rombel.*') ? 'menu-open' : ''}}">
+          <a href="#" class="nav-link {{request()->routeIs('rombel.*') ? 'active' : ''}}">
             <i class="nav-icon fas fa-chalkboard"></i>
             <p>
               Rombongan Belajar
@@ -120,46 +141,54 @@
             </p>
           </a>
           <ul class="nav nav-treeview">
-            <li class="nav-item">
-              <a href="pages/charts/chartjs.html" class="nav-link">
+            <li class="nav-item {{request()->routeIs('rombel.kelas') ? 'menu-open' : ''}}">
+              <a href="{{route('rombel.kelas')}}" class="nav-link {{request()->routeIs('rombel.kelas') ? 'active' : ''}}">
                 <i class="far fa-circle nav-icon"></i>
                 <p>Kelas</p>
               </a>
             </li>
-            <li class="nav-item">
-              <a href="pages/charts/flot.html" class="nav-link">
+            <li class="nav-item {{ request()->routeIs('rombel.ekstrakulikuler') ? 'menu-open' : ''}}">
+              <a href="{{route('rombel.ekstrakulikuler')}}" class="nav-link {{request()->routeIs('rombel.ekstrakulikuler') ? 'active' : ''}}">
                 <i class="far fa-circle nav-icon"></i>
                 <p>Eksktrakulikuler</p>
               </a>
             </li>
           </ul>
         </li>
-        <li class="nav-item">
-          <a href="pages/widgets.html" class="nav-link">
+        <li class="nav-item {{ request()->is('jadwal') ? 'menu-open' : ''}}">
+          <a href="{{route('jadwal')}}" class="nav-link {{ request()->is('jadwal') ? 'active' : '' }}">
             <i class="nav-icon fas fa-chalkboard-teacher"></i>
             <p>
               Jadwal
             </p>
           </a>
         </li>
-        <li class="nav-item">
-          <a href="pages/widgets.html" class="nav-link">
+        <li class="nav-item {{request()->is('nilai') ? 'menu-open' :''}}">
+          <a href="{{route('nilai')}}" class="nav-link {{ request()->is('nilai') ? 'active' : ''}}">
             <i class="nav-icon fas fa-chart-bar"></i>
             <p>
               Nilai
             </p>
           </a>
         </li>
-        <li class="nav-item">
-          <a href="pages/widgets.html" class="nav-link">
+        <li class="nav-item {{request()->is('userProfile') ? 'menu-open' : ''}}" >
+          <a href="{{route('user_profile')}}" class="nav-link {{ request()->is('userProfile') ? 'active' : ''}}">
             <i class="nav-icon fas fa-user"></i>
             <p>
               Profile User
             </p>
           </a>
         </li>
-        <li class="nav-item">
-          <a href="pages/widgets.html" class="nav-link">
+        <li class="nav-item {{request()->is('download') ? 'menu-open' : ''}}">
+          <a href="{{route('download')}}" class="nav-link {{request()->is('download') ? 'active' : ''}}">
+            <i class="nav-icon fas fa-download"></i>
+            <p>
+              Tahun Akademik
+            </p>
+          </a>
+        </li>
+        <li class="nav-item {{request()->is('download') ? 'menu-open' : ''}}">
+          <a href="{{route('download')}}" class="nav-link {{request()->is('download') ? 'active' : ''}}">
             <i class="nav-icon fas fa-download"></i>
             <p>
               Pusat Unduhan
@@ -167,7 +196,7 @@
           </a>
         </li>
         <li class="nav-item">
-          <a href="pages/widgets.html" class="nav-link">
+          <a href="{{route('logout')}}" class="nav-link">
             <i class="nav-icon fas fa-door-open"></i>
             <p>
               Logout

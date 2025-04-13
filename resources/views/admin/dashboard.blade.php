@@ -30,10 +30,10 @@
             <div class="inner">
               <h3>150</h3>
 
-              <p>New Orders</p>
+              <p>Jumlah Siswa</p>
             </div>
             <div class="icon">
-              <i class="ion ion-bag"></i>
+              <i class="ion ion-person-stalker"></i>
             </div>
             <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
           </div>
@@ -43,12 +43,12 @@
           <!-- small box -->
           <div class="small-box bg-success">
             <div class="inner">
-              <h3>53<sup style="font-size: 20px">%</sup></h3>
+              <h3>53</h3>
 
-              <p>Bounce Rate</p>
+              <p>Jumlah Guru</p>
             </div>
             <div class="icon">
-              <i class="ion ion-stats-bars"></i>
+              <i class="ion ion-university"></i>
             </div>
             <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
           </div>
@@ -60,10 +60,10 @@
             <div class="inner">
               <h3>44</h3>
 
-              <p>User Registrations</p>
+              <p>Kelas</p>
             </div>
             <div class="icon">
-              <i class="ion ion-person-add"></i>
+              <i class="ion ion-ios-flask"></i>
             </div>
             <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
           </div>
@@ -75,10 +75,10 @@
             <div class="inner">
               <h3>65</h3>
 
-              <p>Unique Visitors</p>
+              <p>Eksktrakulikuler</p>
             </div>
             <div class="icon">
-              <i class="ion ion-pie-graph"></i>
+              <i class="ion ion-ios-book"></i>
             </div>
             <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
           </div>
@@ -95,32 +95,42 @@
             <div class="card-header">
               <h3 class="card-title">
                 <i class="fas fa-chart-pie mr-1"></i>
-                asdas
+                Jumlah Siswa
               </h3>
             </div><!-- /.card-header -->
             <div class="card-body">
-              asd
+              Grafik Jumlah Siswa Berdasarkan Jenis Kelamin
             </div><!-- /.card-body -->
           </div>
           <!-- /.card -->
 
-          <div class="card">
-            <div class="card-header">
-              <div class="card-title">
-                asdasd
-              </div>
-            </div>
-          </div>
         </section>
         <section class="col-lg-5 connectedSortable">
           
           <div class="card">
             <div class="card-header">
               <div class="card-title">
-                asdasd
+                <i class="fas fa-wrench mr-1"></i>
+                Update Apps
               </div>
             </div>
-            <div class="card-body">asdasd</div>
+            <div class="card-body">
+
+            </div>
+          </div>
+        </section>
+        <section class="col-lg-12 connectedSortable">
+          
+          <div class="card">
+            <div class="card-header">
+              <div class="card-title">
+                <i class="fas fa-chart-pie mr-1"></i>
+                Grafik Rata - Rata Nilai
+              </div>
+            </div>
+            <div class="card-body">
+              asd
+            </div>
           </div>
         </section>
         <!-- right col -->
