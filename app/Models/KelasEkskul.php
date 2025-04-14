@@ -7,4 +7,5 @@ use Illuminate\Database\Eloquent\Model;
 class KelasEkskul extends Model
 {
     //
+    protected $fillable = "user";
 }

@@ -7,4 +7,6 @@ use Illuminate\Database\Eloquent\Model;
 class Rombel extends Model
 {
     //
+    
+    protected $fillable = "user";
 }
