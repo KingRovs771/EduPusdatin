@@ -8,7 +8,7 @@ class StudentsController extends Controller
 {
     //
     public function index(){
-        $title = "Edu Pusdatin | Dashboard Web";
-        return view("admin.dashboard", compact('title'));
+        $title = "Edu Pusdatin | Peserta Didik Web";
+        return view("admin.students.pesertadidik", compact('title'));
     }
 }
