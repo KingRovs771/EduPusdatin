@@ -38,7 +38,7 @@ Route::get('/guru', [AdmininistratorController::class, 'index'])->name('gtk.guru
 Route::get('/tendik', [AdmininistratorController::class, 'index'])->name('gtk.tendik');
 
 //Route Peserta Didik
-Route::get('/siswa', [AdmininistratorController::class, 'index'])->name('pesertadidik.siswa');
+Route::get('/siswa', [StudentsController::class, 'index'])->name('pesertadidik.siswa');
 Route::get('/alumni', [AdmininistratorController::class, 'index'])->name('pesertadidik.alumni');
 Route::get('/outSiswa', [AdmininistratorController::class, 'index'])->name('pesertadidik.outStudents');
 

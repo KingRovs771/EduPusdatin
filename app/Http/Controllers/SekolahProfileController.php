@@ -9,7 +9,7 @@ class SekolahProfileController extends Controller
     //
     public function index(){
         $title = "Edu Pusdatin | Dashboard Web";
-        return view("admin.profile_school.index", compact('title'));
+        return view("admin.profile_school.data_school", compact('title'));
     }
 
     public function academicYear(){
