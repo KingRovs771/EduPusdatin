@@ -58,8 +58,8 @@
                 <p>Profile Sekolah</p>
               </a>
             </li>
-            <li class="nav-item {{ request()->routeIs('schooldata.tahun_akademik') ? 'menu-open' : '' }}">
-              <a href="{{route('schooldata.tahun_akademik')}}" class="nav-link {{ request()->routeIs('schooldata.tahun_akademik') ? 'active' : '' }}">
+            <li class="nav-item {{ request()->routeIs('schooldata.academicyear.tahun_akademik') ? 'menu-open' : '' }}">
+              <a href="{{route('schooldata.academicyear.tahun_akademik')}}" class="nav-link {{ request()->routeIs('schooldata.tahun_akademik') ? 'active' : '' }}">
                 <i class="far fa-circle nav-icon"></i>
                 <p>Tahun Akademik</p>
               </a>

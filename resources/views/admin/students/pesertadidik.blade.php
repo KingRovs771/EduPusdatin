@@ -38,17 +38,17 @@
             </div><!-- /.card-header -->
             <div class="card-body">
                 <div class="row">
-                    <a href="" class="mr-2">
+                    <a href="{{ route('pesertadidik.siswa.formInputSiswa')}}" class="mr-2">
                         <button class="btn btn-primary"><i class="fas fa-plus"></i> Tambah Data</button>
                     </a>
-                    <a href="" class="mr-2">
+                    <a href="{{ route('pesertadidik.siswa.formImportSiswa')}}" class="mr-2">
                         <button class="btn btn-success"><i class="fas fa-download"></i> Import Data</button>
                     </a>
                     <a href="">
                         <button class="btn btn-danger"><i class="fas fa-trash"></i> Hapus Data</button>
                     </a>
                 </div>
-                 <table class="table ">
+                 <table class="table mt-2">
                     <tr>
                         <th><input type="checkbox" name="" id=""></th>
                         <th>No</th>

@@ -12,13 +12,4 @@ class SekolahProfileController extends Controller
         return view("admin.profile_school.data_school", compact('title'));
     }
 
-    public function academicYear(){
-        $title = "Edu Pusdatin | Academic Year Web";
-        return view("admin.profile_school.academicyear", compact('title'));
-    }
-
-    public function mata_pelajaran(){
-        $title = "Edu Pusdatin | Mata Pelajaran Web";
-        return view("admin.profile_school.mapel", compact('title'));
-    }
 }

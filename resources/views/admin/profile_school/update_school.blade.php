@@ -7,15 +7,14 @@
       <div class="row mb-2">
         <div class="col-sm-6">
           <h1 class="m-0">Profile</h1>
-        </div><!-- /.col -->
+        </div>
         <div class="col-sm-6">
           <ol class="breadcrumb float-sm-right">
             <li class="breadcrumb-item"><a href="#">Data Sekolah</a></li>
             <li class="breadcrumb-item active">Profile Sekolah</li>
           </ol>
-        </div><!-- /.col -->
-      </div><!-- /.row -->
-    </div><!-- /.container-fluid -->
+        </div>
+    </div>
   </div>
   <!-- /.content-header -->
 
@@ -23,12 +22,9 @@
   <section class="content">
     <div class="container-fluid">
       
-      <!-- /.row -->
-      <!-- Main row -->
       <div class="row">
         <!-- Left col -->
         <section class="col-lg-7 connectedSortable">
-          <!-- Custom tabs (Charts with tabs)-->
           <div class="card">
             <div class="card-header">
               <h3 class="card-title">
